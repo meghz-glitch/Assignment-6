@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="./Styles/weather.css">
+   <script src="./Scripts/weather.js">defer</script>
+</head>
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>  
+  <main>
+    <section class="search-section">
+        <input type="text" id="city-input" placeholder="Enter city-name"/> 
+<button id="search-button">Get Weather</button>
+    </section>
+    <section id="weather-result" class="hidden">
+        <h2>Weather in <span id="city-name"></span></h2>
+        <p>Temperature: <span id="temperature"></span> C</p>
+        <p>Condition: <span id="condition"></span></p>
+        <p>wind-speed: <span id="wind-speed"></span>km/h</p>
+    </section>
+    <section id="error-message" class="hidden">
+        <p>Error: ,<span id="error-text"></span> class="hidden"</p>
+    </section>
+  </main>
+</body>
+</html>
