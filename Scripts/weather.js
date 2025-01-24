@@ -76,7 +76,7 @@ function displayWeather(cityName, temperature, windspeed, weathercode) {
   };
 
   document.getElementById('city-name').textContent = cityName;
-  document.getElementById('temp').textContent = temperature;
+  document.getElementById('temperature').textContent = temperature;
   document.getElementById('wind-speed').textContent = windspeed;
   document.getElementById('condition').textContent =
     conditions[weathercode] || "Unknown";
