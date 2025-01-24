@@ -49,12 +49,27 @@ text-align: center;
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
+    body {
+        padding: 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    header {
+        font-size: 1.4rem; 
+    }
+
     #city-input {
         font-size: 0.9rem;
+        padding: 0.4rem; 
     }
 
     #search-button {
         font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        max-width: 95%; 
     }
 }
