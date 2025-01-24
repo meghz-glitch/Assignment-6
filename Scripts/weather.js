@@ -60,19 +60,19 @@ function displayWeather(cityName, temperature, windspeed, weathercode) {
     1: "Partly cloudy",
     2: "Mainly clear",
     3: "Overcast",
-    45: "Foggy",
-    48: "Depositing rime fog",
-    51: "Drizzle: Light",
-    53: "Drizzle: Moderate",
-    55: "Drizzle: Dense intensity",
-    61: "Rain: Light",
-    63: "Rain: Moderate",
-    65: "Rain: Heavy intensity",
-    71: "Snow: Slight",
-    73: "Snow: Moderate",
-    75: "Snow: Heavy",
-    95: "Thunderstorm: Slight or moderate",
-    96: "Thunderstorm: Heavy",
+    4: "Foggy",
+    4: "Depositing rime fog",
+    5: "Drizzle: Light",
+    5: "Drizzle: Moderate",
+    5: "Drizzle: Dense intensity",
+    6: "Rain: Light",
+    6: "Rain: Moderate",
+    6: "Rain: Heavy intensity",
+    7: "Snow: Slight",
+    7: "Snow: Moderate",
+    7: "Snow: Heavy",
+    9: "Thunderstorm: Slight or moderate",
+    9: "Thunderstorm: Heavy",
   };
 
   document.getElementById('city-name').textContent = cityName;
@@ -89,5 +89,5 @@ function showError(message) {
   document.getElementById('error-text').textContent = message;
   document.getElementById('error-message').classList.remove('hidden');
   document.getElementById('weather-result').classList.add('hidden');
-  document.getElementById('search-button').disabled = false; // Ensure button is re-enabled
+ document.getElementById('search-button').disabled= false;
 }
